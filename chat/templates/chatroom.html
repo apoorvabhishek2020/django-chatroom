@@ -14,7 +14,7 @@
     <div id="user-hello"></div>
     {{ room_name|json_script:"room-name" }}
     <script>
-        const roomName = JSON.parse(document.getElementsById('room-name').textContent);
+        const roomName = JSON.parse(document.getElementById('room-name').textContent);
         const chatSocket = new WebSocket(
             'ws://' +
             window.location.host +
